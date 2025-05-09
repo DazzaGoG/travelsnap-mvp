@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: travelsnap-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        value: your_mongodb_uri
+      - key: JWT_SECRET
+        value: your_jwt_secret
+      - key: CLOUDINARY_CLOUD_NAME
+        value: your_cloud_name
+      - key: CLOUDINARY_API_KEY
+        value: your_api_key
+      - key: CLOUDINARY_API_SECRET
+        value: your_api_secret
